@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="2" time="1.120" timestamp="2023-03-29T16:45:45.609323" hostname="liam-biometix"><testcase classname="tests.test_cli" name="test_installation_pip" time="0.731" /><testcase classname="tests.test_cli" name="test_module_run" time="0.212" /></testsuite></testsuites>

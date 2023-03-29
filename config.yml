@@ -1,0 +1,27 @@
+runtime:
+  shm: 8G
+  cpus: 6
+  memory: 10G
+  pull: YES
+  volume: data
+  image: "qa:latest"
+  entrypoint: "python3.8 -m qa"
+
+job:
+  - name: Iris Dataset 1
+    flags:
+      mode: iris
+      input: data/iris
+
+  - name: Face Dataset 2
+    flags:
+      mode: face
+      input: data/face
+      filename: "*FACE*"
+
+  - name: Fingerprint Dataset 1
+    flags:
+      mode: finger
+      input: data/finger
+      attributes: "NFIQ2"
+      query: "NFIQ2>40"
